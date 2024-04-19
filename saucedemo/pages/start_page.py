@@ -10,5 +10,5 @@ class StartPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
 
-    def text_error_auth(self):
-        return self.get_txt(self.locator.error_auth)
+    def text_error_auth(self, driver):
+        return self.get_txt(driver, self.locator.error_auth)
