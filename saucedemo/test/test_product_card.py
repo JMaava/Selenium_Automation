@@ -22,7 +22,7 @@ class TestProductCard:
 
         inventory_item_page = InventoryItemPage(driver)
         item_list = inventory_item_page.get_txt(lst_item_name)
-        inventory_item_page.add_in_busket(lst_item_name)
+        inventory_item_page.add_in_basket(lst_item_name)
 
         inventory_item_page.click(self.locator_header.cart_link)
         item_in_basket = inventory_item_page.get_txt(self.locator_cart.item_name)

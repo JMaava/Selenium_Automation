@@ -10,5 +10,3 @@ class InventoryPage(BasePage):
 
     def __init__(self, driver):
         super().__init__(driver)
-
-    # def add_in_busket(self):
